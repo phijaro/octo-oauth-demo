@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>OAuth Application Enrolment Demo</title>
+    </head>
+    <body>
+        <h1>OAuth-based Enrolment Demo</h1>
+        
+        <p>
+            This site is intended to demonstrate how the Octopus Energy
+            OAuth server can be used to enrol volunteers in a research
+            study.
+        </p>
+
+        <p>
+            The site has been registered with Octopus as an OAuth
+            application, so it can invite volunteers to give the
+            research study access to their account using a link, like
+            so:
+        </p>
+
+        <p>
+            <a href="{{ authorize_uri }}">
+                Click here to enrol in the study and allow us to access your Octopus account.
+            </a>
+        </p>
+    </body>
+</html>
