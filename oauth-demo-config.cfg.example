@@ -1,0 +1,20 @@
+# The following settings are necessary for the website to function
+SECRET_KEY=""  # Set this to a long random value
+OEGB_CLIENT_ID=  # This value will be shared with you by Octopus staff
+OEGB_CLIENT_SECRET=  # This value will be shared with you by Octopus staff
+
+# The following settings should be filled in if you want the website
+# to send enrolment records by email
+ENROLMENT_EMAIL_FROM=""         # This will be the address the website sends emails from
+ENROLMENT_EMAIL_TO=""           # This will be the address the website sends emails to
+SMTP_SERVER=""                  # This should be set to the hostname
+                                # of an SMTP server that the website
+                                # can use to send emails
+
+# This setting should be filled in if you want the website to write
+# enrolment records to a SQLite database on the server.
+SQLITE_DB_PATH=""
+
+# This setting should be filled in if you want the website to write
+# enrolment records to a CSV file on the server.
+ENROLMENTS_CSV_FILE_PATH=""
