@@ -2,6 +2,7 @@
 SECRET_KEY=""  # Set this to a long random value
 OEGB_CLIENT_ID=  # This value will be shared with you by Octopus staff
 OEGB_CLIENT_SECRET=  # This value will be shared with you by Octopus staff
+ROUTE_PREFIX=""
 
 # The following settings should be filled in if you want the website
 # to send enrolment records by email

@@ -23,18 +23,18 @@ oegb_authserver = oauth.register(
 )
 
 
-@app.route("/")
+@app.route(f"{app.config['ROUTE_PREFIX']}/")
 def index():
     return render_template("index.html", authorize_uri=url_for("authorize"))
 
 
-@app.route("/authorize/")
+@app.route(f"{app.config['ROUTE_PREFIX']}/authorize/")
 def authorize():
     redirect_uri = url_for("callback", _external=True)
     return oauth.oegb.authorize_redirect(redirect_uri)
 
 
-@app.route("/callback/")
+@app.route(f"{app.config['ROUTE_PREFIX']}/callback/")
 def callback():
     if "code" not in request.args:
         return render_template("failure.html")
